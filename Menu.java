@@ -3,9 +3,9 @@ public class Menu {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         System.out.println("""
-                a) Lecturas
-                b) Peliculas
-                c) Museos
+                1) Lecturas
+                2) Peliculas
+                3) Museos
                 """);
         System.out.println("Selecciona una opción:");
         String opcion = entrada.next();
