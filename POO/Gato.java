@@ -1,18 +1,19 @@
 package POO;
 
-public class Gato {
+public class Gato extends Animal {
     //Atributos
+    private String nombre;
+    private Integer edad;
     private String color;
     private String genero;
     private String raza;
-    private Integer edad;
 
     //Metodo constructor (nos permite inicializar los atributos de la clase)
-    public Gato(String color, String genero, String raza, Integer edad){
+    public Gato(String nombre, Integer edad,String color, String genero, String raza){
+        super(nombre, edad);
         this.color=color;
         this.genero=genero;
         this.raza=raza;
-        this.edad=edad;
 
     }
 
@@ -42,17 +43,11 @@ public class Gato {
         this.raza = raza;
     }
 
-    public Integer getEdad() {
-        return edad;
-    }
-
-    public void setEdad(Integer edad) {
-        this.edad = edad;
-    }
 
     //Métodos
-    public void maullar(){
-        System.out.println("Miau miau");
+    @Override
+    public void emitirSonido(){
+        System.out.println("Estoy maullando");
     }
 
     public void trepar(){
