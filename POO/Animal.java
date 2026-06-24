@@ -1,6 +1,6 @@
 package POO;
 
-public class Animal {
+public abstract class Animal {
     //atributos
     protected String nombre;
     protected Integer edad;
@@ -27,8 +27,7 @@ public class Animal {
         this.edad = edad;
     }
 
-    public void emitirSonido(){
-        System.out.println("Estoy emitiendo un sonido");
-    }
+    public abstract void emitirSonido();
+    public abstract void comer();
     
 }
